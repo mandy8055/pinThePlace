@@ -5,7 +5,7 @@ import axios from "axios";
 import { format } from "timeago.js";
 import Register from "./components/register.component";
 import Login from "./components/login.component";
-import "./app.css";
+import "./App.css";
 
 function App() {
   const myStorage = window.localStorage;
