@@ -6,11 +6,10 @@ import { format } from "timeago.js";
 import Register from "./components/register.component";
 import Login from "./components/login.component";
 import "./App.css";
-import mapboxgl from "mapbox-gl/dist/mapbox-gl-csp";
+import mapboxgl from "mapbox-gl";
 // eslint-disable-next-line import/no-webpack-loader-syntax
-import MapboxWorker from "worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker";
-
-mapboxgl.workerClass = MapboxWorker;
+mapboxgl.workerClass =
+  require("worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker").default;
 
 function App() {
   const myStorage = window.localStorage;
