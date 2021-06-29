@@ -6,9 +6,10 @@ import { format } from "timeago.js";
 import Register from "./components/register.component";
 import Login from "./components/login.component";
 import "./App.css";
-import mapboxgl from "mapbox-gl/dist/mapbox-gl";
-import MapboxWorker from "mapbox-gl/dist/mapbox-gl-csp-worker";
-mapboxgl.workerClass = MapboxWorker;
+import mapboxgl from "mapbox-gl"; // This is a dependency of react-map-gl even if you didn't explicitly install it
+// eslint-disable-next-line import/no-webpack-loader-syntax
+mapboxgl.workerClass =
+  require("worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker").default;
 
 function App() {
   const myStorage = window.localStorage;
