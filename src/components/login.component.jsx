@@ -1,5 +1,5 @@
 import { Cancel, Room } from "@material-ui/icons";
-import axios from "axios";
+import axiosConfig from "../util/axios-config.util";
 import { useState, useRef } from "react";
 import "./login.style.css";
 
@@ -15,7 +15,7 @@ export default function Login({ setShowLogin, myStorage, setCurrentUser }) {
     };
 
     try {
-      const res = await axios.post("/users/login", user);
+      const res = await axiosConfig.post("/users/login", user);
       myStorage.setItem("user", res.data.username);
       setCurrentUser(res.data.username);
       setShowLogin(false);
