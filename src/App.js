@@ -148,7 +148,7 @@ function App() {
               <form onSubmit={handleSubmit}>
                 <label>Title</label>
                 <input
-                  placeholder="Enter a title"
+                  placeholder="Enter place name"
                   onChange={(e) => setTitle(e.target.value)}
                 />
                 <label>Review</label>
