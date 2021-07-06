@@ -5,7 +5,7 @@
 ## App overview
 This repo contains the frontend/client side of the full-stack **MERN** application. This application lets the user to pin the places which they visited across the globe and write the comments about the things they liked most about that place and also provide with the suitable ratings. The application also comes with the login and registration functionality. Anybody can view the pins which are already marked by the other users. A user can create the pins if and only if he/she is logged in to the application. The application is tested on **Google Chrome** browser. The application makes use of the [**Mapbox**](https://www.mapbox.com/) API for providing the Map interface.
 
-This application is built by keeping in mind the best practices which can be used to develop a full-stack application. Although, perfection and learning is an life-long process so I will continue to make use of best practices going along. Please visit **here** for detailed overview of the backend architecture.
+This application is built by keeping in mind the best practices which can be used to develop a full-stack application. Although, perfection and learning is an life-long process so I will continue to make use of best practices going along. Please visit [**here**](https://github.com/mandy8055/pinThePlace_server#readme) for detailed overview of the backend architecture.
 
 ## Features
 1. Login and register functionality is properly handled.
@@ -18,8 +18,15 @@ This application is built by keeping in mind the best practices which can be use
 
 - [ ] Implement delete pins functionality for the current logged in user.
 - [ ] Add confirm password button to the Register card.
+- [ ] Implement different user registration options like Google and facebook login.
 
 ## Known bugs
 1. [**Mapbox Bug1**](https://github.com/visgl/react-map-gl/issues/1266)
 2. [**Mapbox Bug2**](https://github.com/mapbox/mapbox-gl-js/issues/10173)
 3. There is one app specific bug which needs improvement. The pins are overlaying the information filling card i.e. the pins are appearing at the top of the information card. It(pins) need to be overridden by the card component.
+
+## Deployment Link
+
+The backend api is deployed **[here.](https://pin-the-place.herokuapp.com/)**
+
+The application is deployed **[here.](https://pin-the-place.netlify.app/)**
